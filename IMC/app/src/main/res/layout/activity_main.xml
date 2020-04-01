@@ -6,13 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imc" />
+
     <TextView
+        android:id="@+id/sexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="28dp"
+        android:text="Sexo"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Homem"
+        app:layout_constraintStart_toStartOf="@+id/sexo"
+        app:layout_constraintTop_toBottomOf="@+id/sexo" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Mulher"
+        app:layout_constraintBottom_toBottomOf="@+id/radioButton"
+        app:layout_constraintStart_toEndOf="@+id/radioButton"
+        app:layout_constraintTop_toTopOf="@+id/radioButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Idade"
+        app:layout_constraintEnd_toEndOf="@+id/sexo"
+        app:layout_constraintStart_toStartOf="@+id/sexo"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+    <TextView
+        android:id="@+id/txtAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Altura"
+        app:layout_constraintStart_toStartOf="@+id/edtIdade"
+        app:layout_constraintTop_toBottomOf="@+id/edtIdade" />
+
+    <EditText
+        android:id="@+id/edtIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/txtIdade"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdade" />
+
+    <EditText
+        android:id="@+id/edtAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/txtAltura"
+        app:layout_constraintTop_toBottomOf="@+id/txtAltura" />
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Peso"
+        app:layout_constraintStart_toStartOf="@+id/edtAltura"
+        app:layout_constraintTop_toBottomOf="@+id/edtAltura" />
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/txtPeso"
+        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Calcular IMC"
+        app:layout_constraintEnd_toEndOf="@+id/edtPeso"
+        app:layout_constraintStart_toStartOf="@+id/edtPeso"
+        app:layout_constraintTop_toBottomOf="@+id/edtPeso" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
