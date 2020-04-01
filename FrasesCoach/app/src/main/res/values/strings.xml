@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Frases Coach</string>
+
+    <array name="frases">
+        <item name="frase01">A imaginação é sua própria forma de coragem</item>
+        <item name="frase02">Estou convencido que metade do que separa os empreendedores bem
+            sucedidos de todo o resto é a pura perseverança</item>
+        <item name="frase03">Uma vez que você tenha aceitado suas falhas, ninguém poderá usá-las contra você</item>
+        <item name="frase04">Passei a vida inteira com medo, medo das coisas que poderiam acontecer
+            e das que poderiam não acontecer. O que eu descobri foi que o medo é a pior parte. Esse é o verdadeiro inimigo</item>
+        <item name="frase05">Ter sucesso é falhar repetidamente, mas sem perder o entusiasmo</item>
+    </array>
+</resources>
