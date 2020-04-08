@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTituloCerveja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="8dp"
+        android:text="Nome Da Cerveja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Adicionar"
+        app:layout_constraintEnd_toEndOf="@+id/edtValor"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/edtValor"
+        app:layout_constraintTop_toBottomOf="@+id/edtValor" />
+
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/txtValorCerveja"
+        app:layout_constraintStart_toStartOf="@+id/txtValorCerveja"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorCerveja" />
+
+    <EditText
+        android:id="@+id/edtMl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/txtMlCerveja"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/txtMlCerveja"
+        app:layout_constraintTop_toBottomOf="@+id/txtMlCerveja" />
+
+    <TextView
+        android:id="@+id/txtValorCerveja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Valor da Cerveja"
+        app:layout_constraintEnd_toEndOf="@+id/edtMl"
+        app:layout_constraintStart_toStartOf="@+id/edtMl"
+        app:layout_constraintTop_toBottomOf="@+id/edtMl" />
+
+    <TextView
+        android:id="@+id/txtMlCerveja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="ML Por Cerveja"
+        app:layout_constraintEnd_toEndOf="@+id/edtNome"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtTituloCerveja"
+        app:layout_constraintStart_toStartOf="@+id/txtTituloCerveja"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloCerveja" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Calcular Cerveja"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtNome"
+        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

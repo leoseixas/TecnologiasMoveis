@@ -13,16 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnCalcular.setOnClickListener(View.OnClickListener{
+        btnCalcular.setOnClickListener(View.OnClickListener {
             var altura = edtIdade.text.toString().toDouble()
             var peso = edtPeso.text.toString().toDouble()
 
-            val intent = Intent(this,ResultActivity::class.java)
-            val imc = IMC(altura,peso)
-            intent.putExtra("imc",imc)
+            val intent = Intent(this, ResultActivity::class.java)
+            val imc = IMC(altura, peso)
+            intent.putExtra("imc", imc)
             startActivity(intent)
         })
     }
 }
-
-
