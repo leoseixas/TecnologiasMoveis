@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lista_cerveja</string>
+    <string name="cerveja">Cerveja</string>
+    <string name="valor">Valor</string>
+    <string name="volume">Volume</string>
+    <string name="titulo">Lista de Cerveja</string>
+    <string name="btnAdd">ADD CERVEJA</string>
+    <string name="exNome">Nome da Cerveja</string>
+    <string name="assNome">Digite o nome da Cerveja</string>
+    <string name="assVolume">Digite o Volume da Cerveja em ML</string>
+    <string name="assValor">Digite o valor da cerveja</string>
+    <string name="assBtnAdd">Botao de adicionar cerveja</string>
+</resources>

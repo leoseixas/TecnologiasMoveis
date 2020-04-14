@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">lista_cerveja</string>
+    <string name="cerveja">Beer</string>
+    <string name="valor">Value</string>
+    <string name="volume">Volume</string>
+    <string name="titulo">Beer List</string>
+    <string name="btnAdd">ADD BEER</string>
+    <string name="exNome">Beer Name</string>
+    <string name="assNome">" Enter the name of the beer"</string>
+    <string name="assVolume">" Enter the Volume of Beer in ML"</string>
+    <string name="assValor">" Enter the amount of Beer"</string>
+    <string name="assBtnAdd">Add beer button</string>
+</resources>
