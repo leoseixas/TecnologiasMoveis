@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     fun add(){
 
-        if (edtNome.text.toString().length>=3){
+        if (edtNome.text.toString().length>=3 && edtVolume.text.toString().length>=1 && edtValor.text.toString().length>=1){
             val cerveja = Cerveja(edtNome.text.toString(),edtVolume.text.toString().toDouble(), edtValor.text.toString().toDouble())
             edtNome.text.clear()
             edtVolume.text.clear()
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             cervejas.sortBy {it.valor}
             initRecycleView()
         }else{
-            Toast.makeText(this, "Nome invalido, Muito curdo", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Nome, volume ou valor, Muito curdo", Toast.LENGTH_SHORT).show()
         }
     }
 
